@@ -10,7 +10,10 @@ st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout
 @st.cache
 def get_data_from_excel():
     df = pd.read_excel(
-        io="C:\\Users\\Sergio\\Documents\\SIR_Personal_Dell\\Diplomado_DC_UNAM\\Diplomado_DC_UNAM_propedeutico\\Diplomado_DC_UNAM_self_git_Desktop_Dell\supermarkt_sales.xlsx",
+        ##Desktop_Dell
+        #io="C:\\Users\\Sergio\\Documents\\SIR_Personal_Dell\\Diplomado_DC_UNAM\\Diplomado_DC_UNAM_propedeutico\\Diplomado_DC_UNAM_self_git_Desktop_Dell\supermarkt_sales.xlsx",
+        ##HPi5
+        io="C:\\Users\\llell\\Documents\\SIR_Personal\\Diplomado_DC_UNAM\\Propedeutico_diplomado_DC_UNAM\\Propedeutico_Diplomado_DC_UNAM_git\\Intro_pytho_and_SQL\\supermarkt_sales.xlsx",
         engine="openpyxl",
         sheet_name="Sales",
         skiprows=3,
